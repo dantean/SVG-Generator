@@ -1,7 +1,7 @@
 import fs from 'fs';
-import Circle from './lib/circle';
-import Square from './lib/square';
-import Triangle from './lib/triangle';
+import Circle from './lib/circle.js';
+import Square from './lib/square.js';
+import Triangle from './lib/triangle.js';
 import inquirer from 'inquirer';
 
 const questions = [
