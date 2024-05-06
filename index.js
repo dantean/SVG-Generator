@@ -30,7 +30,7 @@ const questions = [
 
 inquirer.prompt(questions)
 .then(data => {
-    if(data.shape === "circle") {
+    if (data.shape === "circle") {
         const circle = new Circle(data.logoText, data.textColor, data.shapeColor);
         fs.writeFile("./examples/circle.svg", circle.render(), err => {
             if (err) {
@@ -39,7 +39,7 @@ inquirer.prompt(questions)
                 console.log("Logo Successfully Created!");
             }
         });
-    } else if(data.shape === "square") {
+    } else if (data.shape === "square") {
         const square = new Square(data.logoText, data.textColor, data.shapeColor);
         fs.writeFile("./examples/square.svg", square.render(), err => {
             if (err) {
