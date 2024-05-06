@@ -26,13 +26,19 @@ const questions = [
         message: "Enter shape color",
         name: "shapeColor"
     },
+    {
+        type: "input",
+        message: "Enter desired filename",
+        name: "filename"
+    }
 ];
 
 inquirer.prompt(questions)
 .then(data => {
+    const filePath = `./output/${data.filename}.svg`;
     if (data.shape === "circle") {
         const circle = new Circle(data.logoText, data.textColor, data.shapeColor);
-        fs.writeFile("./output/circle.svg", circle.render(), err => {
+        fs.writeFile(filePath, circle.render(), err => {
             if (err) {
                 console.error("Error creating file:", err);
             } else {
@@ -41,7 +47,7 @@ inquirer.prompt(questions)
         });
     } else if (data.shape === "square") {
         const square = new Square(data.logoText, data.textColor, data.shapeColor);
-        fs.writeFile("./output/square.svg", square.render(), err => {
+        fs.writeFile(filePath, square.render(), err => {
             if (err) {
                 console.error("Error creating file:", err);
             } else {
@@ -50,7 +56,7 @@ inquirer.prompt(questions)
         });
     } else {
         const triangle = new Triangle(data.logoText, data.textColor, data.shapeColor);
-        fs.writeFile("./output/triangle.svg", triangle.render(), err => {
+        fs.writeFile(filePath, triangle.render(), err => {
             if (err) {
                 console.error("Error creating file:", err);
             } else {
