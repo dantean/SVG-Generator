@@ -13,7 +13,7 @@ describe("Circle", () => {
 
     describe("method", () => {
         it("Test render()", () => {
-            expect(circle.render()).toEqual('<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200"><circle cx="150" cy="100" r="80" fill="black"/><text x="150" y="125" font-size="60" text-anchor="middle" fill="blue">RAS</text></svg>');
+            expect(circle.render()).toEqual('<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200"><circle cx="150" cy="100" r="80" fill="blue"/><text x="150" y="125" font-size="60" text-anchor="middle" fill="red">this is a test</text></svg>');
         });
     });
 });
