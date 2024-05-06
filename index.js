@@ -1,8 +1,8 @@
-import fs from 'fs';
-import Circle from './lib/circle.js';
-import Square from './lib/square.js';
-import Triangle from './lib/triangle.js';
-import inquirer from 'inquirer';
+const fs = require('fs');
+const Circle = require('./lib/circle');
+const Square = require('./lib/square');
+const Triangle = require('./lib/triangle');
+const inquirer = require('inquirer');
 
 const questions = [
     {
