@@ -11,6 +11,11 @@ A command-line application that allows the user to generate a simple SVG image u
 - Step 3: Answer it's questions
 - Step 4: Enjoy your new image :D
 
+## How To Test
+
+- Type `npm run test`
+- Observe the test results
+
 ## Acceptance Criteria
 
 ```
