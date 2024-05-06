@@ -1,12 +1,12 @@
-# Title
+# SVG Logo Generator
 
 ## Description
 
-
+A command-line application that allows the user to generate a simple SVG image using their chosen criteria.
 
 ## How To Use
 
-
+Clone repository and type `node index.js` to run the application.
 
 ## Acceptance Criteria
 
